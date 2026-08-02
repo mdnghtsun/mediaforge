@@ -34,11 +34,20 @@ class TrackMetadata:
         return bool(self.artist and self.title)
 
 
-@dataclass(slots=True)
+@dataclass
 class OrganizationSummary:
-    """Counts the results of a music organization run."""
+    """Summary of an organize operation."""
 
     discovered: int = 0
     transferred: int = 0
+    skipped: int = 0
+    errors: int = 0
+
+@dataclass
+class SyncSummary:
+    """Summary of a staging-to-destination sync operation."""
+
+    discovered: int = 0
+    copied: int = 0
     skipped: int = 0
     errors: int = 0
