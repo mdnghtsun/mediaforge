@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# MediaForge runtime data
+.mediaforge/
+.test-mediaforge/
+
+# Local output/log files
+output.txt
+
+# macOS
+.DS_Store
+
+config/mediaforge.local.yaml

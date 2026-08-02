@@ -1,0 +1,51 @@
+# Directory where new music downloads arrive.
+#
+# This folder is scanned for new music files.
+download_directory: /Volumes/metube
+
+# Intermediate organized library.
+#
+# MediaForge renames files and places them into genre folders here.
+staging_directory: /media/bmw-usb-staging
+
+# Directory where the organized music library is stored.
+#
+# Files will be organized here according to filename_format.
+destination_directory: /media/bmw-usb
+
+# Audio file extensions to scan for.
+#
+# Extensions are case-insensitive.
+#
+# NOTE:
+# Only MP3 currently supports embedded ID3 metadata.
+# Other formats currently fall back to filename parsing until
+# native metadata support is implemented.
+supported_extensions:
+  - mp3
+
+# Filename format used when building the destination filename.
+#
+# Available placeholders:
+#   {artist}
+#   {title}
+filename_format: "{artist} - {title}"
+
+# Preview changes without copying or moving any files.
+#
+# Default: true
+dry_run: false
+
+# Replace an existing file if one already exists.
+#
+# Default: false
+overwrite_existing: false
+
+# How files are transferred into the organized library.
+#
+# Valid values:
+#   copy - Keep the original file in the download directory.
+#   move - Remove the original file after transferring it.
+#
+# Default: copy
+transfer_mode: copy

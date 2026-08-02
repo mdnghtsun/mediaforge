@@ -1,0 +1,49 @@
+# Canonical folders for future genre-based organization.
+#
+# These settings are not used while MediaForge is configured
+# to produce a flat staging library.
+library_folders:
+  electronic: "01 Electronic"
+  punjabi: "02 Punjabi"
+  hip_hop: "03 Hip-Hop"
+  rock: "04 Rock"
+  pop: "05 Pop"
+  bollywood: "06 Bollywood"
+  qawwali: "07 Qawwali"
+  soundtracks: "08 Soundtracks"
+  classical: "09 Classical"
+  unsorted: "99 Unsorted"
+
+# Maps embedded genre values to canonical folder keys.
+#
+# Values must correspond to keys under library_folders.
+genre_mapping:
+  Electronic: electronic
+  Electronica: electronic
+  Dance: electronic
+  House: electronic
+  Techno: electronic
+
+  Punjabi: punjabi
+  Bhangra: punjabi
+
+  Hip-Hop/Rap: hip_hop
+  Hip-Hop: hip_hop
+  Hip Hop: hip_hop
+  Rap: hip_hop
+
+  Rock: rock
+  Alternative Rock: rock
+
+  Pop: pop
+
+  Bollywood: bollywood
+  Hindi Film Music: bollywood
+
+  Qawwali: qawwali
+
+  Soundtrack: soundtracks
+  Soundtracks: soundtracks
+  Film Score: soundtracks
+
+  Classical: classical

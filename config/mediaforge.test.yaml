@@ -1,0 +1,14 @@
+download_directory: .test-mediaforge/downloads
+staging_directory: .test-mediaforge/staging
+destination_directory: .test-mediaforge/usb
+
+supported_extensions:
+  - mp3
+
+filename_format: "{artist} - {title}"
+
+dry_run: false
+overwrite_existing: false
+transfer_mode: copy
+
+unknown_genre_directory: "99 Unsorted"

@@ -1,0 +1,45 @@
+# =============================================================================
+# MediaForge Local Development Configuration
+#
+# Used for development on macOS.
+#
+# Downloads are read from the local youtube-dl-server mount, then organized
+# into a local staging library.
+# =============================================================================
+
+# Directory monitored for downloaded media.
+download_directory: /Volumes/metube
+
+# Local staging library.
+#
+# MediaForge writes normalized files here.
+staging_directory: /Users/smundra/Music/mediaforge
+
+# Local USB mount used during development.
+#
+# This directory will eventually be populated by the `sync` command.
+destination_directory: /Volumes/SANDISK
+
+# Supported media extensions.
+supported_extensions:
+  - mp3
+
+# Output filename format.
+#
+# Available placeholders:
+#   {artist}
+#   {title}
+filename_format: "{artist} - {title}"
+
+# Preview changes without modifying files.
+dry_run: false
+
+# Replace existing files in the staging library.
+overwrite_existing: false
+
+# How downloaded files are transferred into the staging library.
+#
+# Valid values:
+#   copy
+#   move
+transfer_mode: copy
